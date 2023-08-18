@@ -1,0 +1,86 @@
+/* default style */
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #000; background-color: #fff;
+    }
+}
+
+html, body {
+    height: 100vh;
+    margin: 0;
+    font-family: "Noto Sans", Sans-Serif;
+    font-size: 10pt;
+}
+
+body, p, table, tr, td, a, th {
+    vertical-align: top;
+}
+
+h3 {
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+a {
+    font-style: italic;
+}
+
+/* ---------- table elements as follows ---------- */
+table {
+    width: 110vh; /* customization */
+}
+
+td, th {
+    padding:4px;
+}
+
+tr.alternate-row {
+    background: #ffffff
+}
+
+tr {
+    page-break-inside: avoid !important;
+}
+
+td, th {
+    border-color: grey
+}
+
+td.total-number-cell, td.total-label-cell, td.centered-label-cell {
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+th.column-heading-left {
+    text-align: left;
+}
+
+td.centered-label-cell, th.column-heading-center {
+    text-align: center;
+}
+
+td.number-header, th.column-heading-right, td.number-cell, td.total-number-cell {
+    text-align: right;
+}
+
+td.neg {
+    color: red;
+}
+
+td.number-cell, td.total-number-cell, td.anchor-cell, td.date-cell {
+    white-space: nowrap;
+}
+
+td.highlight {
+    background-color: #e1e1e1
+}
+
+canvas {
+    height: 50vh; /* customization */
+}
+
+@media print {
+    html, body {
+        height: unset;
+    }
+}
